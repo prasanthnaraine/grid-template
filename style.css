@@ -1,0 +1,35 @@
+body{
+    background-color: blue;
+    margin: 90px;  
+}
+
+.chart1 { grid-area: div1; }
+.chart2 { grid-area: div2; }
+.chart3 { grid-area: div3; }
+.chart4 { grid-area: div4; }
+.chart5 { grid-area: div5; }
+.chart6 { grid-area: div6;}
+.chart7 { grid-area: div7;}
+.chart8 { grid-area: div8;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'div1 div2 div2 div3 div3 div3'
+    'div4 div5 div5 div3 div3 div3'
+    'div6 div7 div7 div3 div3 div3'
+    'div6 div8 div8 div3 div3 div3';
+  grid-gap: 10px;
+  padding: 10px;
+  height: 70vh;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+hover:(.chart1,.chart2){
+    transform: scale(1.1);
+}
